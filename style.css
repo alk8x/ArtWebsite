@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #FFFCEC;
+    color: #1F212E;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8B9571;
+    color: #FFFCEC;
+    padding: 1rem 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFCEC;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+header .nav-links a {
+    margin-left: 1.5rem;
+}
+
+header .nav-links a.active {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #8B9571;
+    color: #FFFCEC;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding does not add to the height */
+}
+
+/* Text Styles */
+p {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.contact-container h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contact-container p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+form {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #1F212E;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #8B9571;
+    color: #FFFCEC;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+#gallery h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Force the correct font-family for gallery descriptions */
+.gallery-item p {
+    font-family: 'M PLUS Rounded 1c', sans-serif !important; /* Override conflicting rules */
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #1F212E; /* Ensure text color matches design */
+}
+
+
