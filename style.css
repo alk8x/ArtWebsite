@@ -100,13 +100,63 @@ form button {
 
 /* Gallery Section */
 #gallery {
-    padding: 3rem 1.5rem;
+    display: flex;
+    gap: 4rem;
+    padding: 2rem 1rem;
+}
+/* Filter Container */
+.filter-sidebar {
+    width: 600px;
+    margin-left: 2rem;
+}
+
+.filter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-item {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #1F212E;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.filter-item:first-child {
+    font-size: 1.2rem; /* "All" is larger */
+}
+
+.filter-item:hover {
+    color: #6f7c5b; /* Lighter color on hover */
+}
+
+.filter-item.active {
+    text-decoration: underline; /* Underline when active */
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 4rem;
+}
+
+.gallery-item {
     text-align: center;
 }
 
-#gallery h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
+.gallery-item.hidden {
+    display: none;
+}
+
+/* #gallery {
+    padding: 3rem 1.5rem;
+    text-align: center;
 }
 
 .gallery-grid {
@@ -118,11 +168,16 @@ form button {
 
 .gallery-item {
     text-align: center;
-}
+}*/
+
+/* #gallery h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+} */
 
 .gallery-item img {
-    width: 100%;
-    border-radius: 8px;
+    width: 50%;
+    border-radius: 2px;
 }
 
 /* Force the correct font-family for gallery descriptions */
@@ -130,6 +185,7 @@ form button {
     font-family: 'M PLUS Rounded 1c', sans-serif !important; /* Override conflicting rules */
     margin-top: 0.5rem;
     font-size: 0.875rem;
+    /* text-align: left; */
     color: #1F212E; /* Ensure text color matches design */
 }
 

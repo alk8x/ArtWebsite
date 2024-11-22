@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work - Art</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,30 +48,47 @@
 
         <!-- Gallery Section -->
         <section id="gallery">
-            <h2>Gallery</h2>
+            <!-- Filter Options -->
+            <div class="filter-sidebar">
+                <ul class="filter-list">
+                    <li class="filter-item active" data-filter="all">All</li>
+                    <li class="filter-item" data-filter="oil">Oil Paintings</li>
+                    <li class="filter-item" data-filter="digital">Digital Art</li>
+                    <li class="filter-item" data-filter="digital">Ink</li>
+                    <li class="filter-item" data-filter="sketches">Sketches</li>
+                </ul>
+            </div>
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="artwork1.jpg" alt="Artwork 1">
-                    <p>Title of Artwork 1</p>
+                <div class="gallery-item" data-category="oil">
+                    <img src="images/pomegranate_oil.png" alt="Artwork 1">
+                    <p>Pomegranate, oil on canvas, November 2024</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="artwork2.jpg" alt="Artwork 2">
-                    <p>Title of Artwork 2</p>
+                <div class="gallery-item" data-category="oil">
+                    <img src="images/lemon_oil.png" alt="Artwork 2">
+                    <p>Lemons, oil on canvas, November 2024</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="artwork3.jpg" alt="Artwork 3">
-                    <p>Title of Artwork 3</p>
+                <div class="gallery-item" data-category="oil">
+                    <img src="images/watermelon_oil.png" alt="Artwork 3">
+                    <p>Watermelon, oil on canvas, October 2024</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="artwork4.jpg" alt="Artwork 4">
-                    <p>Title of Artwork 4</p>
+                <div class="gallery-item" data-category="oil">
+                    <img src="images/apple_oil.png" alt="Artwork 4">
+                    <p>Apple, oil on canvas, September 2024</p>
+                </div>
+                <div class="gallery-item" data-category="oil">
+                    <img src="images/grapes_oil.png" alt="Artwork 5">
+                    <p>Grapes, oil on canvas, September 2024</p>
+                </div>
+                <div class="gallery-item" data-category="oil">
+                    <img src="images/oranges_oil.png" alt="Artwork 6">
+                    <p>Oranges, oil on canvas, August 2924</p>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <p>Contact Info: <a href="mailto:your.email@example.com">allison.fish.makes.art@gmail.com</a><br>
-            Content created and coded by Allison Karp</p>
+            Content created and coded by Allison Fish</p>
     </footer>
 </body>
 </html>
