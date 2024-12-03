@@ -5,12 +5,18 @@ body {
     background-color: #FFFCEC;
     color: #1F212E;
     line-height: 1.6;
+    margin-top: 80px; /* Adjust this value to match the height of the header */
 }
 
 header {
+    position: fixed; /* Fix the header at the top of the viewport */
+    top: 0; /* Align to the top of the page */
+    width: 100%; /* Ensure the header spans the full width */
     background-color: #8B9571;
     color: #FFFCEC;
     padding: 1rem 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for visual separation */
 }
 
 header nav {
