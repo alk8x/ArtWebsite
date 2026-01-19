@@ -1,0 +1,49 @@
+.hero {
+    display: flex;
+    min-height: 70vh;
+  }
+  
+  .hero-text {
+    background: var(--green-main);
+    color: var(--yellow-accent);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+  }
+  
+  .hero-media {
+    flex: 2;
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.latest-video {
+text-align: center;
+padding: 4rem 1rem;
+}
+
+.video-wrapper iframe {
+width: 560px;
+height: 315px;
+max-width: 100%;
+border-radius: 12px;
+}
+
+.shop-preview {
+    background: var(--yellow-accent);
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+.shop-preview button {
+border: 1px solid black;
+background: transparent;
+padding: 0.5rem 1.5rem;
+font-family: 'Oswald', sans-serif;
+cursor: pointer;
+}
+  
+   

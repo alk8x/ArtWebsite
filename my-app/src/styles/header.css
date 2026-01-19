@@ -1,0 +1,26 @@
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--green-main);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .site-header nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .site-header a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+  }
+  
+  .site-header a.active {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,31 @@
+:root {
+    --green-main: #2F6C57;
+    --yellow-accent: #F8D794;
+    --black: #000000;
+    --white: #FFFFFF;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
