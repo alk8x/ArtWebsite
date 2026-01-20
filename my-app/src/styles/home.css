@@ -19,10 +19,17 @@
     align-items: center;
     justify-content: center;
   }
-  
+
 .latest-video {
 text-align: center;
 padding: 4rem 1rem;
+}
+
+.latest-video h2 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
 }
 
 .video-wrapper iframe {
@@ -36,7 +43,7 @@ border-radius: 12px;
     background: var(--yellow-accent);
     text-align: center;
     padding: 3rem 1rem;
-  }
+}
   
 .shop-preview button {
 border: 1px solid black;

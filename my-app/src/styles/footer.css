@@ -1,4 +1,4 @@
-.site-header {
+.site-footer {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -10,23 +10,22 @@
     padding: 1rem 2rem;
   }
   
-  .site-header nav {
+  .site-footer nav {
     display: flex;
     gap: 1.5rem;
   }
 
-  .site-header h1 {
+  .site-footer h1 {
     font-family: 'Amatic SC', cursive;
     font-weight: 300;
     color: var(--yellow-accent);
   }
   
-  .site-header a {
+  .site-footer a {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
   }
   
-  .site-header a.active {
+  .site-footer a.active {
     text-decoration: underline;
   }
-  
