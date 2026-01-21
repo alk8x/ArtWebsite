@@ -5,15 +5,34 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="logo">
-        <h1>ALLISON FISH</h1>
+        <NavLink to="/" className="logo-link">
+          <h1>ALLISON FISH</h1>
+        </NavLink>
       </div>
+
       <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/portfolio">Portfolio</NavLink>
-        <NavLink to="/shop">Shop</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+          Home
+        </NavLink>
+
+        <NavLink to="/portfolio" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+          Portfolio
+        </NavLink>
+
+        <NavLink to="/shop" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+          Shop
+        </NavLink>
+
+        <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+          About
+        </NavLink>
+
+        <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+          Contact
+        </NavLink>
       </nav>
+
     </header>
   );
 }
+

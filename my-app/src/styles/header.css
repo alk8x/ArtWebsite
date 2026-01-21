@@ -1,32 +1,58 @@
 .site-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: var(--green-main);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-  }
-  
-  .site-header nav {
-    display: flex;
-    gap: 1.5rem;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--green-main);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
 
-  .site-header h1 {
-    font-family: 'Amatic SC', cursive;
-    font-weight: 300;
-    color: var(--yellow-accent);
-  }
-  
-  .site-header a {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-  }
-  
-  .site-header a.active {
-    text-decoration: underline;
-  }
+.site-header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Logo */
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-link h1 {
+  margin: 0;
+  cursor: pointer;
+}
+
+.logo-link:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Nav links */
+.nav-link {
+  font-family: 'Oswald';
+  font-weight: 100;
+}
+
+.nav-link:hover {
+  opacity: 0.85;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Logo typography */
+.site-header h1 {
+  font-family: 'Amatic SC';
+  font-weight: 700;
+  color: var(--yellow-accent);
+}
+
+
+
+
   

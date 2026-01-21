@@ -1,31 +1,29 @@
 .site-footer {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: var(--green-main);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-  }
-  
-  .site-footer nav {
-    display: flex;
-    gap: 1.5rem;
-  }
+  background: var(--green-main);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
 
-  .site-footer h1 {
-    font-family: 'Amatic SC', cursive;
-    font-weight: 300;
-    color: var(--yellow-accent);
-  }
-  
-  .site-footer a {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-  }
-  
-  .site-footer a.active {
-    text-decoration: underline;
-  }
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-links img {
+  width: 24px;        /* adjust to taste */
+  height: 24px;
+  filter: brightness(0) invert(1); /* makes dark icons white */
+  transition: opacity 0.2s ease;
+}
+
+.social-links a:hover img {
+  opacity: 0.75;
+}

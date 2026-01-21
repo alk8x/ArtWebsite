@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import LatestVideo from "../components/LatestVideo";
 import ShopPreview from "../components/ShopPreview";
-// import ContactSection from "../components/ContactSection";
+import HeroContact from "../components/HeroContact";
 import "../styles/home.css";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <LatestVideo />
       <ShopPreview />
-      {/* <ContactSection /> */}
+      <HeroContact />
     </>
   );
 }

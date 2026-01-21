@@ -1,6 +1,8 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import '@openfonts/amatic-sc_all';
+import '@fontsource/oswald';
 
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
