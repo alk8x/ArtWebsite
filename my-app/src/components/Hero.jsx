@@ -1,13 +1,18 @@
 export default function Hero() {
-    return (
-      <section className="hero">
-        <div className="hero-text">
-          <h1>Blah Blah Blah</h1>
+  return (
+    <section className="hero">
+      <div className="hero-text">
+        <div className="hero-text-content">
+          <h1>Engineer by day,<br />
+          Creator by night</h1>
         </div>
-        <div className="hero-media">
-          <p>[ VIDEO OF WORKING ON WORK ]</p>
-        </div>
-      </section>
-    );
-  }
+      </div>
+
+      <div className="hero-media">
+        <p>[ VIDEO OF WORKING ON WORK ]</p>
+      </div>
+    </section>
+  );
+}
+
   
