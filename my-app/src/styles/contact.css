@@ -1,0 +1,52 @@
+.contact {
+  min-height: calc(100vh - 120px); /* keeps footer at bottom */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-inner {
+  max-width: 1000px;
+  width: 100%;
+  padding: 4rem 3rem;
+}
+
+/* Titles */
+.contact-title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+  color: var(--green-main);
+  margin-bottom: 1rem;
+}
+
+/* Body text */
+.contact-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Links */
+.contact-text a {
+  color: var(--green-main);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-text a:hover {
+  border-bottom: 1px solid var(--green-main);
+  opacity: 0.85;
+}
+
+/* Social spacing */
+.contact-socials .contact-text {
+  margin-bottom: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-inner {
+    text-align: center;
+  }
+}
