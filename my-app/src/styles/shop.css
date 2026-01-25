@@ -1,0 +1,168 @@
+/* =========================
+   SHOP PAGE LAYOUT
+   ========================= */
+
+.shop-page {
+  padding: 4rem 2rem 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.shop-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.shop-header h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.5rem;
+  color: var(--green-main);
+  margin-bottom: 1rem;
+}
+
+.shop-header p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   ART GRID
+   ========================= */
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 2rem;
+}
+
+/* Individual card */
+.art-card {
+  text-align: center;
+}
+
+/* Image container */
+.art-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border: 1px solid #777;
+  margin-bottom: 1rem;
+
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* Cropping wrapper */
+.art-image-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* ✅ only the art gets clipped */
+}
+
+/* Artwork image */
+.art-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Title + price */
+.art-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.dimension {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+/* Fan favorite badge */
+.fan-favorite-badge {
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+
+  width: 125px;
+  height: auto;
+
+  z-index: 10;
+  pointer-events: none;
+}
+
+.art-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.art-image {
+  cursor: pointer;
+}
+
+
+/* Mobile (phones) */
+@media (max-width: 768px) {
+  .shop-page {
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  .shop-header {
+    margin-bottom: 3rem;
+  }
+
+  .shop-header h1 {
+    font-size: 2.75rem;
+  }
+
+  .shop-header p {
+    font-size: 1rem;
+  }
+
+  /* One column grid */
+  .shop-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Prevent hover from feeling too aggressive on mobile */
+  .art-image:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Slight image polish on tap */
+  .art-img {
+    transition: transform 0.25s ease;
+  }
+
+  .art-image:active .art-img {
+    transform: scale(1.02);
+  }
+
+  /* Fan favorite badge scales down */
+  .fan-favorite-badge {
+    width: 90px;
+    top: -2.25rem;
+    left: -2.25rem;
+  }
+}
+
+
+

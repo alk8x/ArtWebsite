@@ -47,3 +47,35 @@
 .page-content {
   flex: 1;
 }
+
+
+/* =========================
+   FOOTER – MOBILE FIXES
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .site-footer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    justify-self: center;
+  }
+
+  /* Social icons centered */
+  .social-links {
+    justify-content: center;
+  }
+
+  /* Email spacing */
+  .footer-right p {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+}

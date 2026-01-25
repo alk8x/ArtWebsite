@@ -137,5 +137,88 @@
 .hero-contact p {
   font-size: 1.2rem;
 }
-  
+ 
+
+/* =========================
+   MOBILE LAYOUT FIXES
+   ========================= */
+
+@media (max-width: 900px) {
+
+  /* HERO SECTION */
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-text {
+    flex: none;
+    min-height: 40vh;
+
+    background-size: contain;
+    background-position: center;
+
+    padding: 3rem 2rem;
+    font-size: 2rem;
+
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-text-content {
+    max-width: 100%;
+  }
+
+  .hero-media {
+    flex: none;
+    min-height: 35vh;
+    padding: 2rem 1rem;
+  }
+
+  /* VIDEO */
+  .video-wrapper iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .latest-video h2 {
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+  }
+
+  /* SHOP PREVIEW */
+  .shop-preview {
+    min-height: 45vh;
+    padding: 3rem 1.5rem;
+
+    /* remove desktop offset on mobile */
+    --content-offset: 0%;
+    justify-content: center;
+  }
+
+  .shop-preview-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .shop-button {
+    font-size: 2.2rem;
+    padding: 0.5rem 1.8rem;
+  }
+
+  .shop-description {
+    font-size: 1.2rem;
+  }
+
+  /* CONTACT / GENERAL SECTIONS */
+  .hero-contact h2 {
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+  }
+
+  .hero-contact p {
+    font-size: 1.1rem;
+  }
+}
    
