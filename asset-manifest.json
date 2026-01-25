@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a713931.css",
-    "main.js": "/static/js/main.676147d3.js",
+    "main.css": "/static/css/main.9fdef19b.css",
+    "main.js": "/static/js/main.148d077d.js",
     "static/js/453.fd2f0c4a.chunk.js": "/static/js/453.fd2f0c4a.chunk.js",
+    "static/media/Joel_TLOU.png": "/static/media/Joel_TLOU.16763ac00237955233c6.png",
+    "static/media/clementine.png": "/static/media/clementine.c1bd37ddda2eb8b4df9b.png",
+    "static/media/OTGW.png": "/static/media/OTGW.f7560d5474ff5c08b63f.png",
+    "static/media/luna_moth.png": "/static/media/luna_moth.8e7ace3bad0868808909.png",
     "static/media/home_shop_preview.png": "/static/media/home_shop_preview.7e9bb9a9c782462cf6c2.png",
     "static/media/about_photo.png": "/static/media/about_photo.ef4ea3935571badc4bd9.png",
     "static/media/amatic-sc-all-700.woff": "/static/media/amatic-sc-all-700.9277aef2fbe10336a739.woff",
@@ -23,12 +27,12 @@
     "static/media/oswald-vietnamese-400-normal.woff": "/static/media/oswald-vietnamese-400-normal.e043fa939034c9e8a4a4.woff",
     "static/media/oswald-vietnamese-400-normal.woff2": "/static/media/oswald-vietnamese-400-normal.c8282b4a116aa667f4e8.woff2",
     "index.html": "/index.html",
-    "main.9a713931.css.map": "/static/css/main.9a713931.css.map",
-    "main.676147d3.js.map": "/static/js/main.676147d3.js.map",
+    "main.9fdef19b.css.map": "/static/css/main.9fdef19b.css.map",
+    "main.148d077d.js.map": "/static/js/main.148d077d.js.map",
     "453.fd2f0c4a.chunk.js.map": "/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a713931.css",
-    "static/js/main.676147d3.js"
+    "static/css/main.9fdef19b.css",
+    "static/js/main.148d077d.js"
   ]
 }
