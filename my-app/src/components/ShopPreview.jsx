@@ -1,16 +1,20 @@
-import { NavLink } from "react-router-dom";
+import shopPreviewImage from "../assets/home_shop_preview.png"
 
 export default function ShopPreview() {
   return (
     <section className="shop-preview">
-      <div className="shop-preview-content">
-        <NavLink to="/shop" className="shop-button">
-          ONLINE STORE
-        </NavLink>
+      <img
+        src={shopPreviewImage}
+        alt=""
+        className="shop-preview-bg"
+        loading="lazy"
+        decoding="async"
+      />
 
+      <div className="shop-preview-content">
+        <a href="/#/shop" className="shop-button">Online Store</a>
         <p className="shop-description">
-          Check out my latest prints for purchase on my shop!
-        </p>
+        Check out my latest prints for purchase on my shop!        </p>
       </div>
     </section>
   );
