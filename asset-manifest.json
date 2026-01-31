@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.9fdef19b.css",
-    "main.js": "/static/js/main.148d077d.js",
+    "main.css": "/static/css/main.c1ff6492.css",
+    "main.js": "/static/js/main.b4859fb7.js",
     "static/js/453.fd2f0c4a.chunk.js": "/static/js/453.fd2f0c4a.chunk.js",
     "static/media/Joel_TLOU.png": "/static/media/Joel_TLOU.16763ac00237955233c6.png",
+    "static/media/viktor_arcane.png": "/static/media/viktor_arcane.9bd36588445674923e6f.png",
+    "static/media/zuko.png": "/static/media/zuko.1e44c7d215defee206f7.png",
     "static/media/clementine.png": "/static/media/clementine.c1bd37ddda2eb8b4df9b.png",
     "static/media/OTGW.png": "/static/media/OTGW.f7560d5474ff5c08b63f.png",
+    "static/media/apple.png": "/static/media/apple.e74768a639df74cba7cf.png",
     "static/media/luna_moth.png": "/static/media/luna_moth.8e7ace3bad0868808909.png",
     "static/media/home_shop_preview.png": "/static/media/home_shop_preview.7e9bb9a9c782462cf6c2.png",
     "static/media/about_photo.png": "/static/media/about_photo.ef4ea3935571badc4bd9.png",
@@ -27,12 +30,12 @@
     "static/media/oswald-vietnamese-400-normal.woff": "/static/media/oswald-vietnamese-400-normal.e043fa939034c9e8a4a4.woff",
     "static/media/oswald-vietnamese-400-normal.woff2": "/static/media/oswald-vietnamese-400-normal.c8282b4a116aa667f4e8.woff2",
     "index.html": "/index.html",
-    "main.9fdef19b.css.map": "/static/css/main.9fdef19b.css.map",
-    "main.148d077d.js.map": "/static/js/main.148d077d.js.map",
+    "main.c1ff6492.css.map": "/static/css/main.c1ff6492.css.map",
+    "main.b4859fb7.js.map": "/static/js/main.b4859fb7.js.map",
     "453.fd2f0c4a.chunk.js.map": "/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fdef19b.css",
-    "static/js/main.148d077d.js"
+    "static/css/main.c1ff6492.css",
+    "static/js/main.b4859fb7.js"
   ]
 }
