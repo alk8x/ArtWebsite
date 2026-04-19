@@ -1,36 +1,40 @@
 .hero {
-    display: flex;
-    min-height: 70vh;
-  }
-  
-.hero-text {
-  flex: 1;
   position: relative;
+  min-height: 70vh;
+  overflow: hidden;
+}
 
-  background-image: url("../assets/home_green_box.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: left center;
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 0;
 
-  display: flex;
-  align-items: center;
-  padding: 6rem;
+  left: 20%;   /* push video to the right, tweak this value */
+  width: 90%;  /* keep it filling the rest of the space */
+}
 
-  color: var(--yellow-accent);
-  font-size: 2.5rem;
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;        /* control vertical stretch */
+  width: 45%;          /* control how far it stretches horizontally over the video */
+  object-fit: fill;    /* stretches the image to fit exactly the box you define */
+  z-index: 1;
 }
 
 .hero-text-content {
+  position: relative;
+  z-index: 2;
+  padding: 6rem;
   max-width: 600px;
-}
-
-
-.hero-media {
-  flex: 2;
-  background: #E5E5E5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: var(--yellow-accent);
+  font-size: 2.5rem;
+  padding-top: 10rem;   /* increase this to push text further down */
 }
 
 .latest-video {
