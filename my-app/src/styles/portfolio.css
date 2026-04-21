@@ -1,0 +1,162 @@
+/* =========================
+   PORTFOLIO PAGE
+   ========================= */
+
+.portfolio-page {
+  padding: 4rem 2rem 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.portfolio-header h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.5rem;
+  color: var(--green-main);
+  margin-bottom: 1rem;
+}
+
+.portfolio-header p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   SECTIONS (Traditional, Digital, Animation)
+   ========================= */
+
+.portfolio-section {
+  margin-bottom: 5rem;
+}
+
+.section-label {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--green-main);
+  margin-bottom: 2.5rem;
+}
+
+.section-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* =========================
+   CATEGORY BLOCK
+   ========================= */
+
+.portfolio-category {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr 160px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Vertical text label */
+.category-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.3rem;
+  color: var(--green-main);
+  letter-spacing: 0.05em;
+  padding-top: 0.5rem;
+  line-height: 1.2;
+}
+
+/* Hero media area */
+.category-hero {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #e5e5e5;
+}
+
+.hero-media-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================
+   THUMBNAIL STRIP
+   ========================= */
+
+.category-thumbs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.thumb-btn {
+  position: relative;
+  border: 2px solid transparent;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  aspect-ratio: 1;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Selected state — stroke around thumbnail */
+.thumb-btn.selected {
+  border-color: #1a1a1a;
+}
+
+.thumb-btn:hover:not(.selected) {
+  border-color: #aaa;
+}
+
+/* Play icon overlay for video thumbs */
+.play-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+  .portfolio-category {
+    grid-template-columns: 2rem 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .category-thumbs {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

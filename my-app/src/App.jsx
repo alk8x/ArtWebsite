@@ -4,10 +4,12 @@ import Footer from "./components/Footer.jsx";
 import '@openfonts/amatic-sc_all';
 import '@fontsource/oswald';
 import AnimatedRoutes from "./AnimatedRoutes";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <AnimatedRoutes />
       <Footer />
