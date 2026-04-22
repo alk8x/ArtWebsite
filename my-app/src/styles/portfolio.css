@@ -41,7 +41,7 @@
 .section-label {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--green-main);
@@ -70,28 +70,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0px;
+  justify-content: space-between;    /* spreads letters top to bottom */
 
   font-family: 'Amatic SC', cursive;
-  font-size: 1.3rem;
+  font-size: 2.4rem;
   color: var(--green-main);
   letter-spacing: 0.05em;
-  padding-top: 0.5rem;
-  line-height: 1.2;
+  height: 100%;                      /* fill the full grid row height */
 }
 
 /* Hero media area */
 .category-hero {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  max-height: 600px;        /* cap how tall it can get */
   overflow: hidden;
-  background: #e5e5e5;
+  /* background: #f0f0ed; */
 }
 
 .hero-media-item {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;             /* natural height based on image ratio */
+  max-height: 600px;
+  object-fit: contain;      /* shows full image without cropping */
   display: block;
 }
 

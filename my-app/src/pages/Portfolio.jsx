@@ -1,37 +1,23 @@
 import { useState } from "react";
 import "../styles/portfolio.css";
+import clementine from "../assets/clementine.png";
+import apple from "../assets/apple.png";
+import me from "../assets/oilpastel_self.png";
+import josh from "../assets/oilpastel_josh.png";
+import nestor from "../assets/oilpastel_nestor.png";
+import bb from "../assets/blueberries.png";
+import arcane from "../assets/arcane.png";
+import jss from "../assets/JSS.png";
+import otgw from "../assets/OTGW.png";
+import animation30 from "../assets/AnimationDay30-31.mp4";
+import animation30_still from "../assets/animation30_stillshot.png";
+import lunamoth from "../assets/luna_moth_og.png";
 
 // --- Replace these imports with your actual asset imports ---
 // import oilPastel1 from "../assets/oil_pastel_1.png";
 // etc.
 
 const sections = [
-  {
-    id: "traditional",
-    label: "Traditional",
-    categories: [
-      {
-        id: "oil-pastel",
-        name: "Oil Pastel",
-        items: [
-          { type: "image", src: "https://placehold.co/800x600/d0ccc8/888?text=Oil+Pastel+1", thumb: "https://placehold.co/200x200/d0ccc8/888?text=1" },
-          { type: "image", src: "https://placehold.co/800x600/c8ccd0/888?text=Oil+Pastel+2", thumb: "https://placehold.co/200x200/c8ccd0/888?text=2" },
-          { type: "image", src: "https://placehold.co/800x600/ccd0c8/888?text=Oil+Pastel+3", thumb: "https://placehold.co/200x200/ccd0c8/888?text=3" },
-          { type: "image", src: "https://placehold.co/800x600/d0c8cc/888?text=Oil+Pastel+4", thumb: "https://placehold.co/200x200/d0c8cc/888?text=4" },
-        ],
-      },
-      {
-        id: "oil-paint",
-        name: "Oil Paint",
-        items: [
-          { type: "image", src: "https://placehold.co/800x600/c8d0cc/888?text=Oil+Paint+1", thumb: "https://placehold.co/200x200/c8d0cc/888?text=1" },
-          { type: "image", src: "https://placehold.co/800x600/ccc8d0/888?text=Oil+Paint+2", thumb: "https://placehold.co/200x200/ccc8d0/888?text=2" },
-          { type: "image", src: "https://placehold.co/800x600/d0ccc8/888?text=Oil+Paint+3", thumb: "https://placehold.co/200x200/d0ccc8/888?text=3" },
-          { type: "image", src: "https://placehold.co/800x600/c8ccc0/888?text=Oil+Paint+4", thumb: "https://placehold.co/200x200/c8ccc0/888?text=4" },
-        ],
-      },
-    ],
-  },
   {
     id: "digital",
     label: "Digital",
@@ -40,8 +26,8 @@ const sections = [
         id: "procreate",
         name: "Procreate",
         items: [
-          { type: "image", src: "https://placehold.co/800x600/d0ccc8/888?text=Procreate+1", thumb: "https://placehold.co/200x200/d0ccc8/888?text=1" },
-          { type: "image", src: "https://placehold.co/800x600/c8d0c8/888?text=Procreate+2", thumb: "https://placehold.co/200x200/c8d0c8/888?text=2" },
+          { type: "image", src: arcane, thumb: arcane },
+          { type: "image", src: otgw, thumb: otgw },
           { type: "image", src: "https://placehold.co/800x600/d0c8c8/888?text=Procreate+3", thumb: "https://placehold.co/200x200/d0c8c8/888?text=3" },
           { type: "image", src: "https://placehold.co/800x600/c8c8d0/888?text=Procreate+4", thumb: "https://placehold.co/200x200/c8c8d0/888?text=4" },
         ],
@@ -57,9 +43,36 @@ const sections = [
         name: "Shorts",
         items: [
           // { type: "video", src: "https://www.w3schools.com/html/mov_bbb.mp4", thumb: "https://placehold.co/200x200/d0ccc8/888?text=▶+1" },
-          { type: "image", src: "https://placehold.co/800x600/c8d0cc/888?text=Short+2", thumb: "https://placehold.co/200x200/c8d0cc/888?text=2" },
+          { type: "video", src: animation30, thumb: animation30_still },
           { type: "image", src: "https://placehold.co/800x600/ccd0c8/888?text=Short+3", thumb: "https://placehold.co/200x200/ccd0c8/888?text=3" },
           { type: "image", src: "https://placehold.co/800x600/d0c8d0/888?text=Short+4", thumb: "https://placehold.co/200x200/d0c8d0/888?text=4" },
+        ],
+      },
+    ],
+  },
+    {
+    id: "traditional",
+    label: "Traditional",
+    categories: [
+      {
+        id: "oil-pastel",
+        name: "Oil Pastel",
+        items: [
+          { type: "image", src: me, thumb: me },
+          { type: "image", src: josh, thumb: josh },
+          { type: "image", src: nestor, thumb: nestor },
+          { type: "image", src: bb, thumb: bb },
+          { type: "image", src: jss, thumb: jss },
+        ],
+      },
+      {
+        id: "oil-paint",
+        name: "Oil Paint",
+        items: [
+          { type: "image", src: clementine, thumb: clementine },
+          { type: "image", src: apple, thumb: apple },
+          { type: "image", src: lunamoth, thumb: lunamoth },
+          { type: "image", src: "https://placehold.co/800x600/c8ccc0/888?text=Oil+Paint+4", thumb: "https://placehold.co/200x200/c8ccc0/888?text=4" },
         ],
       },
     ],
@@ -84,10 +97,9 @@ function CategoryBlock({ category }) {
         {selected.type === "video" ? (
           <video
             key={selected.src}
-            autoPlay
             loop
-            muted
             playsInline
+            controls
             className="hero-media-item"
           >
             <source src={selected.src} type="video/mp4" />
@@ -120,7 +132,7 @@ export default function Portfolio() {
       <header className="portfolio-header">
         <h1>Portfolio</h1>
         <p>
-          Recent work in multiple forms of media
+          Recent work in multiple forms of media.
         </p>
       </header>
 
