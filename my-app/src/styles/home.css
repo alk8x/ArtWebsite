@@ -166,15 +166,15 @@
   }
 
   .hero-overlay {
-    width: 100%;      /* let the green overlay cover full width */
+    width: 50%;      /* let the green overlay cover part of width */
     height: 100%;
   }
 
   .hero-text-content {
     padding: 2rem;
     padding-top: 3rem;   /* much less top padding on mobile */
-    font-size: 1.5rem;   /* shrink the text so it fits */
-    max-width: 100%;
+    font-size: 1.1rem;   /* shrink the text so it fits */
+    max-width: 55%;
   }
 
   /* VIDEO */

@@ -28,8 +28,6 @@ const sections = [
         items: [
           { type: "image", src: arcane, thumb: arcane },
           { type: "image", src: otgw, thumb: otgw },
-          { type: "image", src: "https://placehold.co/800x600/d0c8c8/888?text=Procreate+3", thumb: "https://placehold.co/200x200/d0c8c8/888?text=3" },
-          { type: "image", src: "https://placehold.co/800x600/c8c8d0/888?text=Procreate+4", thumb: "https://placehold.co/200x200/c8c8d0/888?text=4" },
         ],
       },
     ],
@@ -44,8 +42,6 @@ const sections = [
         items: [
           // { type: "video", src: "https://www.w3schools.com/html/mov_bbb.mp4", thumb: "https://placehold.co/200x200/d0ccc8/888?text=▶+1" },
           { type: "video", src: animation30, thumb: animation30_still },
-          { type: "image", src: "https://placehold.co/800x600/ccd0c8/888?text=Short+3", thumb: "https://placehold.co/200x200/ccd0c8/888?text=3" },
-          { type: "image", src: "https://placehold.co/800x600/d0c8d0/888?text=Short+4", thumb: "https://placehold.co/200x200/d0c8d0/888?text=4" },
         ],
       },
     ],
@@ -72,7 +68,6 @@ const sections = [
           { type: "image", src: clementine, thumb: clementine },
           { type: "image", src: apple, thumb: apple },
           { type: "image", src: lunamoth, thumb: lunamoth },
-          { type: "image", src: "https://placehold.co/800x600/c8ccc0/888?text=Oil+Paint+4", thumb: "https://placehold.co/200x200/c8ccc0/888?text=4" },
         ],
       },
     ],
