@@ -2,11 +2,11 @@ import "../styles/shop.css";
 import art1 from "../assets/clementine.png";
 import art2 from "../assets/OTGW.png";
 import art3 from "../assets/luna_moth.png";
-import art4 from "../assets/Joel_TLOU.png";
 import art5 from "../assets/zuko.png";
 import art6 from "../assets/viktor_arcane.png";
 import art7 from "../assets/apple.png";
 import fanFavorite from "../assets/star_fan_fav.png";
+import art4 from "../assets/charcoal_bodies.png";
 
 
 export default function Shop() {
@@ -86,9 +86,9 @@ export default function Shop() {
           <div className="art-image">
             <img src={art4} alt="Artwork title" className="art-img" loading="lazy"/>
           </div>
-          <h3>Joel - The Last of Us, Procreate</h3>
-          <span className="dimension">Print: 8x10"<br /></span>
-          <span className="price">Print: $20.00</span>
+          <h3>Live Figure Drawing - 4 Bodies</h3>
+          <span className="dimension">Print: 5x7"<br /></span>
+          <span className="price">Print: $10.00</span>
         </div>
       </div>
     </section>
