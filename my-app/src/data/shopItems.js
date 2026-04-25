@@ -17,6 +17,7 @@ import art10_2 from "../assets/watermelon_OG.JPEG";
 import art11 from "../assets/grapes.png";
 import art11_2 from "../assets/grapes_OG.JPEG";
 import art12 from "../assets/lemons.png";
+import art13 from "../assets/achilles.png";
 
 export const shopItems = [
   {
@@ -40,6 +41,17 @@ export const shopItems = [
     originalPrice: null,
     fanFavorite: false,
     description: "Portrait of Zuko from Avatar: The Last Airbender, painted digitally in Procreate.",
+  },
+  {
+    id: "achilles",
+    title: "Song of Achilles",
+    medium: "Heavy Card Stock - Gloss Paper",
+    images: [art13],
+    printSize: "8x10\"",
+    printPrice: "$20.00",
+    originalPrice: null,
+    fanFavorite: false,
+    description: "Achilles from the Iliad after Patroclus is killed.",
   },
   {
     id: "viktor-arcane",
