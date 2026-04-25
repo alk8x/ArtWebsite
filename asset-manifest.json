@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.e8c52ab4.css",
-    "main.js": "/static/js/main.a54b5201.js",
+    "main.js": "/static/js/main.62bb12ad.js",
     "static/js/453.fd2f0c4a.chunk.js": "/static/js/453.fd2f0c4a.chunk.js",
+    "static/media/achilles.png": "/static/media/achilles.cd99c58b78f78fa856b7.png",
     "static/media/JSS.png": "/static/media/JSS.d7687d3ef4d2c46046db.png",
     "static/media/oilpastel_nestor.png": "/static/media/oilpastel_nestor.f2855a9cc81650f1cf52.png",
     "static/media/HomePageReel.mp4": "/static/media/HomePageReel.570befff286948c2ac40.mp4",
@@ -52,11 +53,11 @@
     "static/media/oswald-vietnamese-400-normal.woff2": "/static/media/oswald-vietnamese-400-normal.c8282b4a116aa667f4e8.woff2",
     "index.html": "/index.html",
     "main.e8c52ab4.css.map": "/static/css/main.e8c52ab4.css.map",
-    "main.a54b5201.js.map": "/static/js/main.a54b5201.js.map",
+    "main.62bb12ad.js.map": "/static/js/main.62bb12ad.js.map",
     "453.fd2f0c4a.chunk.js.map": "/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8c52ab4.css",
-    "static/js/main.a54b5201.js"
+    "static/js/main.62bb12ad.js"
   ]
 }
