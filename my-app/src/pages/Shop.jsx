@@ -2,10 +2,13 @@ import { useNavigate } from "react-router-dom";
 import { shopItems } from "../data/shopItems";
 import fanFavorite from "../assets/star_fan_fav.png";
 import "../styles/shop.css";
+import { useEffect } from "react";
 
 export default function Shop() {
   const navigate = useNavigate();
-
+  useEffect(() => {
+    document.title = "Shop | Allison Fish";
+  }, []);
   return (
     <section className="shop-page">
       <header className="shop-header">

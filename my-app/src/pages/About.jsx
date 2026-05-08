@@ -1,7 +1,11 @@
 import "../styles/about.css";
 import aboutPhoto from "../assets/about_photo.png";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About | Allison Fish";
+  }, []);
   return (
     <section className="about">
       <div className="about-inner">

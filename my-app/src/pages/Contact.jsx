@@ -1,6 +1,10 @@
 import "../styles/contact.css";
+import { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact | Allison Fish";
+  }, []);
   return (
     <section className="contact">
       <div className="contact-inner">

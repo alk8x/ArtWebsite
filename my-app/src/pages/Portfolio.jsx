@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../styles/portfolio.css";
 import clementine from "../assets/clementine.png";
 import apple from "../assets/apple.png";
@@ -208,6 +208,9 @@ function CategoryBlock({ category }) {
 }
 
 export default function Portfolio() {
+  useEffect(() => {
+    document.title = "Portfolio | Allison Fish";
+  }, []);
   return (
     <section className="portfolio-page">
       <header className="portfolio-header">
