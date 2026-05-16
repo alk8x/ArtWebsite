@@ -12,6 +12,10 @@ import otgw from "../assets/OTGW.png";
 import animation30 from "../assets/AnimationDay30-31.mp4";
 import animation30_still from "../assets/animation30_stillshot.png";
 import lunamoth from "../assets/luna_moth_og.png";
+import cc1 from "../assets/catclimbing1.png";
+import cc2 from "../assets/catclimbing2.png";
+import cc3 from "../assets/catclimbing3.png";
+import soa from "../assets/achilles.png";
 
 // --- Replace these imports with your actual asset imports ---
 // import oilPastel1 from "../assets/oil_pastel_1.png";
@@ -26,6 +30,26 @@ const sections = [
         id: "procreate",
         name: "Procreate",
         items: [
+          { type: "image", src: cc1, thumb: cc1, info: {
+            title: "Climbing Cat 1",
+            year: "2026",
+            description: "A cat getting ready to go climbing!"
+          }},
+          { type: "image", src: cc2, thumb: cc2, info: {
+            title: "Climbing Cat 2",
+            year: "2026",
+            description: "A cat trad climbing!"
+          }},
+          { type: "image", src: cc3, thumb: cc3, info: {
+            title: "Climbing Cat 3",
+            year: "2026",
+            description: "A cat climbing hold!"
+          }},
+          { type: "image", src: soa, thumb: soa, info: {
+            title: "Arcane Fanart - Viktor",
+            year: "2026",
+            description: "Achilles from the Iliad after Patroclus is killed."
+          }},
           { type: "image", src: arcane, thumb: arcane, info: {
             title: "Arcane Fanart - Viktor",
             year: "2025",
