@@ -42,7 +42,7 @@ import { useEffect, useState } from "react";
 // }
 
 export default function LatestVideo() {
-  const videoId = "KWp4UGeuEuo"; // 👈 update this when you post a new video
+  const videoId = "GcJx_6lLjqY"; // 👈 update this when you post a new video
 
   return (
     <section className="latest-video">
