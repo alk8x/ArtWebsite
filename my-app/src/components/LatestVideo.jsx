@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 // export default function LatestVideo() {
 //   const [videoId, setVideoId] = useState(null);
@@ -42,7 +42,7 @@ import { useEffect, useState } from "react";
 // }
 
 export default function LatestVideo() {
-  const videoId = "GcJx_6lLjqY"; // 👈 update this when you post a new video
+  const videoId = "HUHHDs1v3Go"; // 👈 update this when you post a new video
 
   return (
     <section className="latest-video">

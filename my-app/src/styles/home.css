@@ -37,6 +37,72 @@
   padding-top: 10rem;   /* increase this to push text further down */
 }
 
+/* =========================
+   NEXT SHOW SECTION
+   ========================= */
+
+.next-show {
+  background: var(--yellow-accent);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.next-show-title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  color: var(--green-main);
+  margin-bottom: 2.5rem;
+}
+
+.next-show-tbd {
+  font-family: 'Amatic SC', cursive;
+  font-size: 5rem;
+  color: var(--green-main);
+  opacity: 0.4;
+}
+
+.next-show-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.show-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  min-width: 260px;
+  flex: 1;
+  max-width: 380px;
+  text-align: left;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.show-name {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.8rem;
+  color: var(--green-main);
+  margin: 0 0 0.75rem;
+}
+
+.show-date,
+.show-time,
+.show-location {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  color: #333;
+}
+
+.show-location {
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
 .latest-video {
   text-align: center;
   padding: 4rem 1rem;
@@ -221,6 +287,19 @@
 
   .hero-contact p {
     font-size: 1.1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .next-show-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show-card {
+    width: 100%;
+    max-width: 100%;
   }
 }
    
