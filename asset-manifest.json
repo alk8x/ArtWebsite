@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8c52ab4.css",
-    "main.js": "/static/js/main.a5da26d4.js",
+    "main.css": "/static/css/main.34ae84a1.css",
+    "main.js": "/static/js/main.ce2d3fb9.js",
     "static/js/453.fd2f0c4a.chunk.js": "/static/js/453.fd2f0c4a.chunk.js",
     "static/media/achilles.png": "/static/media/achilles.cd99c58b78f78fa856b7.png",
     "static/media/JSS.png": "/static/media/JSS.d7687d3ef4d2c46046db.png",
@@ -55,12 +55,12 @@
     "static/media/oswald-vietnamese-400-normal.woff": "/static/media/oswald-vietnamese-400-normal.e043fa939034c9e8a4a4.woff",
     "static/media/oswald-vietnamese-400-normal.woff2": "/static/media/oswald-vietnamese-400-normal.c8282b4a116aa667f4e8.woff2",
     "index.html": "/index.html",
-    "main.e8c52ab4.css.map": "/static/css/main.e8c52ab4.css.map",
-    "main.a5da26d4.js.map": "/static/js/main.a5da26d4.js.map",
+    "main.34ae84a1.css.map": "/static/css/main.34ae84a1.css.map",
+    "main.ce2d3fb9.js.map": "/static/js/main.ce2d3fb9.js.map",
     "453.fd2f0c4a.chunk.js.map": "/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8c52ab4.css",
-    "static/js/main.a5da26d4.js"
+    "static/css/main.34ae84a1.css",
+    "static/js/main.ce2d3fb9.js"
   ]
 }
