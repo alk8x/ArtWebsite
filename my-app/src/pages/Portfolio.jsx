@@ -79,6 +79,18 @@ const sections = [
             medium: "Procreate, DaVinci Resolve",
             description: "My final animation from a 30 Prompt Animation Challenge. This last day was 'Whatever You Want'."
           }},
+          { type: "youtube", src: "https://youtu.be/U5aT_qM2yhU", thumb: "https://img.youtube.com/vi/U5aT_qM2yhU/hqdefault.jpg", info: {
+            title: "Insane x TADC",
+            year: "2026",
+            medium: "Procreate, DaVinci Resolve",
+            description: "A fan animation of the characters from The Amazing Digital Circus over the song Insane by Baasik and Black Gryph0n. This was based on my original prediction for the last episode of the short series."
+          }},
+          { type: "youtube", src: "https://youtu.be/ieR8gO90ITw", thumb: "https://img.youtube.com/vi/ieR8gO90ITw/hqdefault.jpg", info: {
+            title: "Just a Man x TADC",
+            year: "2026",
+            medium: "Procreate, DaVinci Resolve",
+            description: "A fan animation of the characters from The Amazing Digital Circus over the song Just a Man from Epic the Musical. I pictured these characters to be similar to the ones from the musical about the Odyssey."
+          }},
         ],
       },
     ],
@@ -162,6 +174,10 @@ function ImageZoomModal({ src, alt, onClose }) {
   );
 }
 
+function getYouTubeEmbedUrl(url) {
+  const match = url.match(/(?:v=|youtu\.be\/)([^&?/]+)/);
+  return match ? `https://www.youtube.com/embed/${match[1]}` : url;
+}
 
 function CategoryBlock({ category }) {
   const [selectedIdx, setSelectedIdx] = useState(0);
@@ -177,20 +193,29 @@ function CategoryBlock({ category }) {
       </div>
 
       {/* Hero media */}
-      <div className="category-hero">
-        {selected.type === "video" ? (
-          <video key={selected.src} loop playsInline controls className="hero-media-item">
-            <source src={selected.src} type="video/mp4" />
-          </video>
-        ) : (
-          <img
-            src={selected.src}
-            alt={category.name}
-            className="hero-media-item hero-media-zoomable"
-            onClick={() => setZoomed(true)}
-          />
-        )}
-      </div>
+    <div className="category-hero">
+      {selected.type === "video" ? (
+        <video key={selected.src} loop playsInline controls className="hero-media-item">
+          <source src={selected.src} type="video/mp4" />
+        </video>
+      ) : selected.type === "youtube" ? (
+        <iframe
+          key={selected.src}
+          src={getYouTubeEmbedUrl(selected.src)}
+          className="hero-media-item hero-youtube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title={selected.info?.title || "YouTube video"}
+        />
+      ) : (
+        <img
+          src={selected.src}
+          alt={category.name}
+          className="hero-media-item hero-media-zoomable"
+          onClick={() => setZoomed(true)}
+        />
+      )}
+    </div>
 
       {/* Thumbnails + info panel on the right */}
       <div className="category-sidebar">
