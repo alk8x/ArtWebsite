@@ -42,7 +42,7 @@
 // }
 
 export default function LatestVideo() {
-  const videoId = "nBGh4KR4EF4"; // 👈 update this when you post a new video
+  const videoId = "l_f_fYVMRhQ"; // 👈 update this when you post a new video
 
   return (
     <section className="latest-video">

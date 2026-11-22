@@ -73,6 +73,12 @@ const sections = [
         name: "Shorts",
         items: [
           // { type: "video", src: "https://www.w3schools.com/html/mov_bbb.mp4", thumb: "https://placehold.co/200x200/d0ccc8/888?text=▶+1" },
+          { type: "youtube", src: "https://youtu.be/l_f_fYVMRhQ", thumb: "https://img.youtube.com/vi/l_f_fYVMRhQ/hqdefault.jpg", info: {
+            title: "Bea & Bash",
+            year: "2026",
+            medium: "Procreate, DaVinci Resolve",
+            description: "My final animation/animatic for 'Animatictober 2026', a version of Inktober but for animatics. Bea, a young witch, and Bash, an animated jack-o-lantern, both live normal lives in Salem, MA during the day. However, when night falls, they are out fighting demons that are trespassing on Earth. Where are they coming from? Who is controlling them? Why are Bea & Bash the only protectors? All questions they are both trying to figure out. This is more of a concept for a show and wanted to see how far I could take in a month's time."
+          }},
           { type: "video", src: animation30, thumb: animation30_still, info: {
             title: "Headlock",
             year: "2026",
@@ -95,6 +101,29 @@ const sections = [
       },
     ],
   },
+  {
+  id: "voice-acting",
+  label: "Voice Acting",
+  categories: [
+    {
+      id: "voice-reels",
+      name: "Voice",
+      items: [
+        {
+          type: "youtube",
+          src: "https://youtu.be/eVURKoSfuuY",
+          thumb: "https://img.youtube.com/vi/eVURKoSfuuY/hqdefault.jpg",
+          info: {
+            title: "Would You Fall in Love with Me Again? Cover",
+            year: "2026",
+            medium: "Audacity",
+            description: "A vocal cover of the song Would You Fall in Love With Me Again? from Epic: The Musical. I sing both parts for Odysseus and Penelope. Vocals edited in Audacity."
+          }
+        },
+      ],
+    },
+  ],
+},
     {
     id: "traditional",
     label: "Traditional",

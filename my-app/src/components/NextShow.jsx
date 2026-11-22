@@ -2,17 +2,17 @@ export default function NextShow() {
     // leave this as an empty array when you don't have shows and it'll automatically be TBD
   const shows = [
     {
-      name: "Yart Sale",
-      date: "August 8th, 2026",
-      time: "12:00 PM – 6:00 PM",
-      location: "175 Beacon St, Somerville, MA",
+      name: "Holiday Sale",
+      date: "December 4th, 2026",
+      time: "7:00PM",
+      location: "Boston Figurative Art Center",
     },
-    {
-      name: "1369 Cafe Gallery",
-      date: "Aug 4th-Sep 30th, 2026",
-      time: "Shop Hours",
-      location: "1369 Cambridge St, Cambridge, MA",
-    },
+    // {
+    //   name: "1369 Cafe Gallery",
+    //   date: "Aug 4th-Sep 30th, 2026",
+    //   time: "Shop Hours",
+    //   location: "1369 Cambridge St, Cambridge, MA",
+    // },
     // {
     //   name: "Member Gallery",
     //   date: "May-June 2026",
